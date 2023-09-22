@@ -5,11 +5,7 @@ import { useEffect, useRef } from "react"
 import Game from "./Game"
 
 import { ChevronDown } from "lucide-react"
-const Section1 = ({
-	nextSection,
-}: {
-	nextSection: React.RefObject<HTMLDivElement>
-}) => {
+const Section1 = () => {
 	const cursorRef = useRef<HTMLDivElement>(null)
 	const section1Ref = useRef<HTMLDivElement>(null)
 	useEffect(() => {
@@ -81,7 +77,7 @@ const Section1 = ({
 					}}
 					delay={4}
 				>
-					<label className='m-auto text-md font-cursive'>
+					<label className='m-auto text-md font-cursive select-none'>
 						scroll
 					</label>
 				</Reveal>

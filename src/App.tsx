@@ -1,31 +1,13 @@
-import { useEffect, useRef } from "react"
-import Game from "./components/Game"
 import Section1 from "./components/Section1"
-// import {
-// 	Link,
-// 	Button,
-// 	Element,
-// 	Events,
-// 	animateScroll as scroll,
-// 	scrollSpy,
-// 	scroller,
-// } from "react-scroll"
+import Section2 from "./components/Section2"
+import WorkedWith from "./components/WorkedWith"
 
 function App() {
-	const section2Ref = useRef<HTMLDivElement>(null)
-
 	return (
 		<div className='wrapper'>
-			<Section1 nextSection={section2Ref} />
-			<section
-				className='two'
-				style={{
-					width: "100vw",
-					height: "100vh",
-					backgroundColor: "red",
-				}}
-				ref={section2Ref}
-			></section>
+			<Section1 />
+			<WorkedWith />
+			<Section2 />
 			<section
 				className='three'
 				style={{

@@ -50,7 +50,7 @@ const Reveal = ({
 				variants={variants}
 				initial='hidden'
 				animate={slideControls}
-				transition={{ duration: 0.3, ease: "easeIn" }}
+				transition={{ duration: 0.3, ease: "easeIn", delay }}
 				className='absolute top-0 bottom-0 left-0 right-0 bg-gray-900 z-20'
 			></motion.div>
 		</div>
