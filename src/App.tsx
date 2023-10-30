@@ -21,14 +21,6 @@ function App() {
           />
         );
       })}
-      <section
-        className="three"
-        style={{
-          width: "100vw",
-          height: "100vh",
-          backgroundColor: "green",
-        }}
-      ></section>
     </div>
   );
 }
